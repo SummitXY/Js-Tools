@@ -1,0 +1,93 @@
+<%- include('./header')%>
+    <%- include('./nav')%>
+
+        <div class="row">
+            <div class="col-md-3 text-right">
+                <a href="#">
+                    <img class="avatar-img img-circle" src="/avatars/test-avatar.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-9">
+                <div class="post">
+                    <h2 class="text-left post-title">
+                        <%=post.title%>
+                    </h2>
+                    <p class="text-left">
+                        <%=post.author%>
+                    </p>
+                    <article>
+                        <%=post.content%>
+                    </article>
+                    <%if(user && user.name===post.author){%>
+                        <p class="text-right">
+                            <a href="/posts/edit?id=<%=post._id%>">
+                                <span class="glyphicon glyphicon-pencil"></span> 编辑</a>
+                        </p>
+                        <%}%>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <!-- 占位 -->
+            </div>
+            <div class="col-md-9">
+                <div class="comment-grid">
+                    <h4 class="comment-title">留言:</h4>
+                    <% if( post.comments && post.comments.length>0){%>
+                        <% post.comments.forEach(function(comment){%>
+                            <div class="row single-comment">
+                                <div class="col-xs-1 ">
+                                    <a href="#"><img class="comment-avatar img-circle" src="/avatars/test-avatar.png" alt=""></a>
+                                </div>
+                                <div class="col-xs-11">
+                                    <p>
+                                        <%= comment.author%>
+                                    </p>
+                                    <article>
+                                        <%= comment.content%>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <% })%>
+                        <%} else {%>
+                                    <p id="no-comment">暂无评论</p>
+                        <%}%>
+
+                        <% if(user){%>
+                            <div class="row ">
+                                
+
+                                
+                            
+                                            <form id="commit-comment" class="" method="POST" action="/posts/comment">
+                                                <div class="form-group sr-only">
+                                                    <label for="input_id"></label>
+                                                    <input class="form-control" type="text" name="id" id="input_id" value="<%=post._id%>">
+                                                </div>
+                                                <div class="form-group sr-only">
+                                                    <label for="input_author"></label>
+                                                    <input class="form-control" type="text" name="author" id="input_author" value="<%= user.name%>">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input_comment" class="sr-only"></label>
+                                                    <textarea   class="form-control" name="content" id="input_comment" rows="5" placeholder="在此留下你的小爪吧～"></textarea>
+                                                </div>
+                                                <button style="color:white;background-color:#4fc08d;" role="button" type="submit" class="btn btn-default">留言</button>
+                                            </form>
+                                        
+                                        </div>
+                                            <%} else{%>
+                                                <p id="add-comment">登陆后才能评论
+                                                    <a href="/signin">点我登陆</a>
+                                                </p>
+                                                <%}%>
+
+                                                    <%- include('./footer')%>
+
+                </div>
+            </div>
+        </div>

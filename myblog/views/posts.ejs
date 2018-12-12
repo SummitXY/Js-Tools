@@ -1,0 +1,27 @@
+<%-include('./header')%>
+    <%-include('./nav')%>
+        <% posts.forEach(function(post){%>
+            <div class="row">
+                <div class="col-md-3 text-right " >
+                    <a href="#">
+                        <img class="avatar-img img-circle" src="/avatars/test-avatar.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-9">
+                    <div class="post">
+                        <h2 class="text-left post-title">
+                            <a href="/posts?id=<%=post._id%>">
+                                <%=post.title%>
+                            </a>
+                        </h2>
+                        <p class="text-left">
+                            <%=post.author%>
+                        </p>
+                        <article>
+                            <%=post.content%>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        <%})%>
+                <%-include('./footer')%>

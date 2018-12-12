@@ -1,0 +1,22 @@
+#screen{
+    width:100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+#screen>div{
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 500;
+    width:fit-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#input{
+    width:30%;
+    
+}

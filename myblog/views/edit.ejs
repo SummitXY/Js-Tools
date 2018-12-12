@@ -1,0 +1,19 @@
+<%-include('./header')%>
+    <%-include('./nav')%>
+
+        <form method="POST">
+            <input class="sr-only" type="text" name="id" value="<%=post._id%>">
+            <div class="form-group">
+                <label for="input_title">标题</label>
+                <input type="text" class=" form-control" id="input_title" name="title" value="<%= post.title%>">
+            </div>
+            <div class="form-group">
+                <label for="input_content">内容</label>
+                <textarea name="content" id="input_content" rows="5" class="form-control">
+                    <%= post.content%>
+                </textarea>
+            </div>
+            <button type="submit" role="button" class="btn btn-fault">提交</button>
+        </form>
+
+        <%-include('./footer')%>

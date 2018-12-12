@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>曲翔宇的个人主页</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav id="head" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#top">
+                    <i id="brand" class="navbar-brand glyphicon glyphicon-grain"></i>
+                </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#top" class="scrollable">About</a></li>
+                        <li><a href="#middle" class="scrollable">Portfolio</a></li>
+                        <li><a href="#bottom" class="scrollable">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </nav>
+    <a href="" name="top"></a>
+    <div class="row" id="none"></div>
+
+    <div class="container" id="port-intro">
+        <div class="row">
+            <div class="col-md-9">
+                <p class="intro">中山大学学生，2015年入学，大一在生命科学学院就读过一年，后转入数据科学与计算机学院的软件工程专业学习，会使用HTML CSS javascript nodejs C++ 等语言，会使用jQuery bootsrap 等前端框架，搭建过<a href="http://120.78.172.227" target="_blank">个人网站</a></p>
+
+                <hr class="star-bright">
+
+                <p class="intro">
+                    想成为一名精通前端、服务端、数据处理的全栈工程师
+                </p>
+
+            </div>
+            <div id="avatar-block" class="col-md-3 ">
+                <a href="https://github.com/SummitXY" class="" target="_blank">
+                  <br>
+                   <img id="avatar" src="https://avatars3.githubusercontent.com/u/22277899?s=460&v=4" alt="" class="img-responsive center-block img-circle">
+               </a>
+                <p class="intro text-center"><a href="https://github.com/SummitXY" target="_blank"><i class="fa fa-github"></i>曲翔宇</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="" name="middle"></a>
+    <div class="container" id="port-body">
+        <h2 class="text-center">PORTFOLIO</h2>
+        <hr class="star-bright">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/mainimg/calculator.png" alt="">
+                    <div class="caption">
+                        <h3>网页计算器</h3>
+                        <p>简单网页计算器，支持加减乘除等基本算术操作</p>
+                        <p><a href="/application/calculator" class="btn btn-info" role="button">点击体验</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/mainimg/maze.png" alt="">
+                    <div class="caption">
+                        <h3>鼠标迷宫</h3>
+                        <p>鼠标移动，不触碰迷宫壁到达终点即获胜</p>
+                        <p><a href="/application/maze" class="btn btn-info" role="button">点击体验</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/mainimg/whac_a_mole.png" alt="">
+                    <div class="caption">
+                        <h3>网页打地鼠</h3>
+                        <p>简单打地鼠游戏，模式是打完一个再出新一个</p>
+                        <p><a href="/application/whacamole" class="btn btn-info" role="button">点击体验</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/mainimg/barragewall.png" alt="">
+                    <div class="caption">
+                        <h3>弹幕墙</h3>
+                        <p>简单弹幕墙，不可联网，有发布弹幕和清屏功能</p>
+                        <p><a href="/application/barragewall" class="btn btn-info" role="button">点击体验</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/mainimg/genealogy.png" alt="">
+                    <div class="caption">
+                        <h3>家谱管理</h3>
+                        <p>可视化家谱管理系统（只能添加，无存储）</p>
+                        <p><a href="/application/genealogy" class="btn btn-info" role="button">点击体验</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+
+    <a href="" name="bottom"></a>
+    <div class="container" id="contact">
+        <h2 class="text-center">CONTACT</h2>
+        <hr class="star-bright">
+        <div class="row">
+            <div class="col-md-7">
+                <form action="mailto:771744189@qq.com" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10"><input type="text" name="name" class="form-control" id="name" placeholder="Type your name"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="col-sm-2 control-label">Subject</label>
+                        <div class="col-sm-10"><input type="text" name="subject" class="form-control" id="subject" placeholder="Hi bro~"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="msg" class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                            <textarea name="body" id="msg" cols="70" rows="5" placeholder="Say anything" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="send" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Send</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-5">
+                <p class="welcome-text">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
+                <p class="welcome-text">I promise to reply A.S.A.P.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container" id="supports">
+       <h2 class="text-center" style="color: white">SUPPORT</h2>
+       <hr>
+        <div class="row">
+            <div class="col-md-2 col-sm-4 ">
+               
+                <img class="support" src="/mainimg/html5icon.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img class="support" src="/mainimg/jqueryicon.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img class="support" src="/mainimg/git-guide.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img class="support" src="/mainimg/nodejs.jpeg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img src="/mainimg/font-awesome.png" alt="" class="img-responsive support">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img src="/mainimg/b.jpg" alt="" class="img-responsive support">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

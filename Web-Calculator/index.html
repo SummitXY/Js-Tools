@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./bootstrap-3.3.7/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="clock">
+           <div id="github-box" class="dropdown">
+                <button class="btn btn-default" type="button" >
+                    <a href="http://github.com/SummitXY" target="_blank">
+                        <img src="./github.png" id="github-img" alt="">
+                    </a>
+                    
+                </button>
+                
+            </div>
+            <div id="myTime">
+                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="250" height="120" id="honehoneclock" align="middle">
+                    <param name="allowScriptAccess" value="always">
+                    <param name="movie" value="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#ffffff">
+                    <param name="wmode" value="transparent">
+                    <embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf" quality="high" bgcolor="#ffffff" width="160" height="100" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+                </object>
+            </div>
+            
+        </div>
+
+        <div class="row">
+
+            <div id="head">
+                <span class="glyphicon glyphicon-off" id="close" data-toggle="tooltip" data-placement="top" title="电源"></span>
+                <span class="glyphicon glyphicon-dashboard" id="history" data-toggle="tooltip" data-placement="top" title="历史记录"></span>
+
+            </div>
+
+            <div id="calc">
+
+                <div id="screen">
+                    <div id="input">0</div>
+                    <div id="output">0</div>
+                </div>
+                <div id="buttons">
+                    <div class="btn-row">
+                        <span id="btn-reZero">CE</span>
+                        <span>←</span>
+                        <span id="btn-per">%</span>
+                        <span class="btn-tool btn-op">÷</span>
+                    </div>
+                    <div class="btn-row">
+                        <span class="btn-num" id="num-7">7</span>
+                        <span class="btn-num">8</span>
+                        <span class="btn-num">9</span>
+                        <span class="btn-tool btn-op">×</span>
+                    </div>
+                    <div class="btn-row">
+                        <span class="btn-num">4</span>
+                        <span class="btn-num">5</span>
+                        <span class="btn-num">6</span>
+                        <span class="btn-tool btn-op">-</span>
+                    </div>
+                    <div class="btn-row">
+                        <span class="btn-num">1</span>
+                        <span class="btn-num">2</span>
+                        <span class="btn-num">3</span>
+                        <span class="btn-tool btn-op">+</span>
+                    </div>
+                    <div class="btn-row">
+                        <span id="btn-zero" class="btn-num">0</span>
+                        <span id="btn-dot">.</span>
+                        <span class="btn-tool" id="btn-eq">=</span>
+
+                    </div>
+                </div>
+            </div>
+            <ul id="history-box">
+                <div id="history-clear"><span class="glyphicon glyphicon-trash"></span></div>
+            </ul>
+        </div>
+        <div class="row">
+            <object id="mouse" type="application/x-shockwave-flash" style="outline:none;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?up_wheelSpokeColor=13D9EB&amp;up_feetColor=D4C898&amp;up_wheelColor=FFFFFF&amp;up_bodyColor=E6DEBE&amp;up_wheelCenterColor=13D9EB&amp;up_eyeColor=000000&amp;up_waterColor=B2EDB9&amp;up_tailColor=E6DEBE&amp;up_foodColor=cba920&amp;up_wheelOuterColor=13D9EB&amp;up_snoutColor=F7F4E9&amp;up_earColor=D4C898&amp;up_bgColor=FFFFFF&amp;" width="200" height="160">
+                <param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?up_wheelSpokeColor=13D9EB&amp;up_feetColor=D4C898&amp;up_wheelColor=FFFFFF&amp;up_bodyColor=E6DEBE&amp;up_wheelCenterColor=13D9EB&amp;up_eyeColor=000000&amp;up_waterColor=B2EDB9&amp;up_tailColor=E6DEBE&amp;up_foodColor=cba920&amp;up_wheelOuterColor=13D9EB&amp;up_snoutColor=F7F4E9&amp;up_earColor=D4C898&amp;up_bgColor=FFFFFF&amp;">
+                <param name="AllowScriptAccess" value="always">
+                <param name="wmode" value="opaque">
+            </object>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+</html>

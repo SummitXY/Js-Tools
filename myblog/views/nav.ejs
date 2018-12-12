@@ -1,0 +1,9 @@
+<a href="/posts " id="head"><h1 class="text-center" id="title"><%=blog.title%></h1></a>
+<p class="text-center " id="helloUser">
+    <% if(user){%>
+       <a href="/posts?name=<%= user.name%>" >Hello <%= user.name%></a>
+    <%} else {%>
+        <a href="/signin" >Please Signin</a>
+    <%}%>
+</p>
+<%-include('./nav-setting')%>

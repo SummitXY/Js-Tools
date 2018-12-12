@@ -1,0 +1,18 @@
+{
+  "name": "myhomepagev2",
+  "version": "2.0.0",
+  "description": "my v2.0 home page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SummitXY"
+  },
+  "author": "QuXiangyu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
